@@ -2,7 +2,7 @@
 ## Data Processing and Cleaning with SQL
 
 ### Dataset: 
-user_data: [Uploading users_data.csv…]()
+user_data: [users_data.csv…]()
 
 - id (Primary Key): Unique identifier for each user.
 - current_age: Current age of the user.
