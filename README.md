@@ -2,8 +2,7 @@
 ## Data Processing and Cleaning with SQL
 
 ### Dataset: 
-user_data: [users_data.csv…]()
-
+user_data:
 - id (Primary Key): Unique identifier for each user.
 - current_age: Current age of the user.
 - retirement_age: Declared retirement age of the user.
@@ -19,7 +18,7 @@ user_data: [users_data.csv…]()
 - credit_score: Credit score rating of the user.
 - num_credit_cards: Number of credit cards owned by the user.
 
-transaction_data [transactions_data.csv]:
+transaction_data:
 - id (Primary Key): Unique identifier for each transaction.
 - date: Date of the transaction.
 - client_id (Foreign Key to users_data.id): Identifier linking the transaction to the user in the users_data table.
