@@ -44,5 +44,5 @@ transaction_data:
 🔹 Error Column:
 - Replaced blank values with "No Error".
 - Split rows containing multiple errors into separate rows base on "id" column from the transaction_data table.
-🔷🔹🔵
+
 
