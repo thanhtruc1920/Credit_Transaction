@@ -35,4 +35,6 @@ transaction_data:
 ### Tools: 
 - SQL
 
-In the 
+In the data_processing.sql file:
+
+- [data_processing.sql]
