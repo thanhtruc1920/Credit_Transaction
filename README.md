@@ -38,7 +38,9 @@ transaction_data:
 ### In the [data_processing.sql](https://github.com/user-attachments/files/25808274/data_processing.sql) file:
 
 🔹 Duplicate check  
+
 🔹 Check for NULL values  
+
 🔹 Number of Users by Age Group  
 🔹 Number of Users by Credit Score Group  
 🔹 Error Column:  
