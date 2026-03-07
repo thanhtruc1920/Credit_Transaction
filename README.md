@@ -3,20 +3,20 @@
 
 ### Dataset: 
 user_data:
-id (Primary Key): Unique identifier for each user.
-current_age: Current age of the user.
-retirement_age: Declared retirement age of the user.
-birth_year: Year of birth for the user.
-birth_month: Month of birth for the user.
-gender: Gender of the user ( male or female).
-address: Residential address of the user.
-latitude: Latitude of the user’s residence.
-longitude: Longitude of the user’s residence.
-per_capita_income: Per capita income of the user.
-yearly_income: Total yearly income of the user.
-total_debt: Total amount of debt owed by the user.
-credit_score: Credit score rating of the user.
-num_credit_cards: Number of credit cards owned by the user.
+- id (Primary Key): Unique identifier for each user.
+- current_age: Current age of the user.
+- retirement_age: Declared retirement age of the user.
+- birth_year: Year of birth for the user.
+- birth_month: Month of birth for the user.
+- gender: Gender of the user ( male or female).
+- address: Residential address of the user.
+- latitude: Latitude of the user’s residence.
+- longitude: Longitude of the user’s residence.
+- per_capita_income: Per capita income of the user.
+- yearly_income: Total yearly income of the user.
+- total_debt: Total amount of debt owed by the user.
+- credit_score: Credit score rating of the user.
+- num_credit_cards: Number of credit cards owned by the user.
 
 transaction_data:
 id (Primary Key): Unique identifier for each transaction.
