@@ -41,7 +41,7 @@ transaction_data:
 - Check for NULL values
 - Number of Users by Age Group
 - Number of Users by Credit Score Group
-- Error Column
+- Error Column:  
 Replaced blank values with "No Error".  
 Split rows containing multiple errors into separate rows base on "id" column from the transaction_data table.
 
