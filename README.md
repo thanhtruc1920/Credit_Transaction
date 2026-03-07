@@ -35,7 +35,6 @@ transaction_data:
 ### Tools: 
 - SQL
 
-In the  file:
-[data_processing.sql](https://github.com/user-attachments/files/25808274/data_processing.sql)
+### In the [data_processing.sql](https://github.com/user-attachments/files/25808274/data_processing.sql) file:
 
 - 
