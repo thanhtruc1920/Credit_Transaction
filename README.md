@@ -43,7 +43,7 @@ transaction_data:
 - Number of Users by Credit Score Group
 - Error Column
 
-  Replaced blank values with "No Error".
+Replaced blank values with "No Error".
 
-  Split rows containing multiple errors into separate rows base on "id" column from the transaction_data table.
+Split rows containing multiple errors into separate rows base on "id" column from the transaction_data table.
 
