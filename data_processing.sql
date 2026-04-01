@@ -67,3 +67,6 @@ ORDER BY year_month ASC, number_transactions DESC
 
 
 
+
+
+
