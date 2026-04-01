@@ -63,8 +63,6 @@ FROM (
 GROUP BY year_month, errors_split
 ORDER BY year_month ASC, number_transactions DESC
 
--- jabdsugwuivdhkq2653567
-
 
 
 
