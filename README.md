@@ -4,7 +4,7 @@
 ### Datasets: 
 user_data:
 
-    | id (Primary Key) | Unique identifier for each user |
+        | id (Primary Key) | Unique identifier for each user |
     
     |  current_age   | Current age of the user |
     
