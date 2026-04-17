@@ -1,7 +1,7 @@
 # Credit Transaction Analysis Project 
 ## Data Processing and Cleaning with SQL
 
-### Dataset: 
+### Datasets: 
 user_data:
 - id (Primary Key): Unique identifier for each user.
 - current_age: Current age of the user.
