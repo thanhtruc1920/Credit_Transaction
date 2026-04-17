@@ -4,7 +4,7 @@
 ### Datasets: 
 user_data:
 
-        | id (Primary Key) | Unique identifier for each user |
+        | id | Primary Key | Unique identifier for each user |
     
         |  current_age   | Current age of the user |
     
@@ -34,7 +34,7 @@ user_data:
 
 transaction_data:
 
-        | id (Primary Key) | Unique identifier for each transaction |
+        | id | Primary Key | Unique identifier for each transaction |
 
         |   date    | Date of the transaction |
     
