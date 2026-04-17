@@ -40,7 +40,7 @@ transaction_data:
     
     | client_id | Foreign Key | Identifier linking the transaction to the user in the users_data table |
 
-    | card_id | Foreign Key | Identifier linking the transaction to the respective card in the cards_data table |
+    |  card_id  | Foreign Key | Identifier linking the transaction to the respective card in the cards_data table |
 
     | amount  | Transaction amount in the respective currency |
 
