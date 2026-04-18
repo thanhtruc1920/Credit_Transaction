@@ -4,23 +4,23 @@
 ### Datasets: 
 user_data:
 
-        | id | Primary Key | Unique identifier for each user |
+        | id | SMALLINT | Unique identifier for each user |
     
-        |  current_age   | Current age of the user |
+        | current_age | TINYINT | Current age of the user |
     
-        | retirement_age | Declared retirement age of the user |
+        | retirement_age | TINYINT | Declared retirement age of the user |
     
-        | birth_year  | Year of birth for the user.
+        | birth_year | SMALLINT | Year of birth for the user.
 
-        | birth_month | Month of birth for the user.
+        | birth_month | TINYINT | Month of birth for the user.
     
-        | gender  | Gender of the user ( male or female).
+        | gender | NVARCHAR(50) | Gender of the user ( male or female).
     
-        | address | Residential address of the user.
+        | address | NVARCHAR(50) | Residential address of the user.
 
-        | latitude  | Latitude of the user’s residence.
+        | latitude | NVARCHAR(50) | Latitude of the user’s residence.
 
-        | longitude | Longitude of the user’s residence.
+        | longitude | FLOAT | Longitude of the user’s residence.
 
         | per_capita_income | Per capita income of the user.
 
@@ -28,9 +28,9 @@ user_data:
 
         |  total_debt  | Total amount of debt owed by the user.
 
-        | credit_score | Credit score rating of the user.
+        | credit_score | SMALLINT | Credit score rating of the user.
 
-        | num_credit_cards | Number of credit cards owned by the user.
+        | num_credit_cards | TINYINT | Number of credit cards owned by the user.
 
 transaction_data:
 
