@@ -1,7 +1,7 @@
 SELECT top 4 * FROM users_data
 SELECT top 4 * FROM transactions_data
 
-    --  check duplicate:
+    --  Check for duplicate:
 SELECT COUNT(*) AS total_rows
     , COUNT(id) AS unique_userid
 FROM users_data
@@ -12,7 +12,25 @@ SELECT COUNT(*) AS total_rows
     , COUNT(id) AS unique_transactionid
 FROM transactions_data
 
-    --  number_users by age_group
+    --  Check for NULL:
+SELECT
+    COLUMN_NAME,
+    IS_NULLABLE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'users_data'
+
+SELECT 
+    COLUMN_NAME,
+    IS_NULLABLE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_NAME = 'transactions_data'
+
+    -- Change data type:
+ALTER TABLE users_data ALTER COLUMN per_capita_income DECIMAL(20, 2)
+ALTER TABLE users_data ALTER COLUMN yearly_income DECIMAL(20, 2)
+ALTER TABLE users_data ALTER COLUMN total_debt DECIMAL(20, 2)
+
+    --  Number of Users by age_group:
 SELECT age_group, COUNT(id) AS number_users
 FROM 
     (SELECT id,
@@ -29,7 +47,7 @@ FROM
 GROUP BY age_group
 ORDER BY age_group
 
-    --  number_users by credit_score_group
+    --  Number of Users by credit_score_group
 SELECT credit_score_group, COUNT(id) AS number_users
 FROM (
     SELECT id, credit_score,
@@ -44,13 +62,7 @@ FROM (
 ) AS credit_score_group
 GROUP BY credit_score_group
 
-    --  errors
-SELECT 
-    COLUMN_NAME,
-    IS_NULLABLE
-FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'transactions_data';
-
+    --  Split the Error column:
 SELECT year_month, errors_split
     , COUNT(id) AS number_transactions
 FROM (
@@ -62,9 +74,3 @@ FROM (
 ) AS errors
 GROUP BY year_month, errors_split
 ORDER BY year_month ASC, number_transactions DESC
-
-
-
-
-
-
