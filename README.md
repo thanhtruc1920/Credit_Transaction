@@ -2,7 +2,7 @@
 ## Data Processing and Cleaning with SQL
 
 ### Datasets: 
-user_data:
+user_data: Customer information
 | Column | Data Type | Description |
 |--------|-----------|-------------|
 | id | SMALLINT | Unique identifier for each user |
@@ -18,33 +18,23 @@ user_data:
 | yearly_income | DECIMAL(20, 2) | Total yearly income of the user |
 |  total_debt  | DECIMAL(20, 2) | Total amount of debt owed by the user |
 | credit_score | SMALLINT | Credit score rating of the user |
-| num_credit_cards | TINYINT | Number of credit cards owned by the user|
+| num_credit_cards | TINYINT | Number of credit cards owned by the user |
 
-transaction_data:
-
-        | id | INT | Primary Key | Unique identifier for each transaction |
-
-        |  date  | DATETIME2(7) | Date of the transaction |
-    
-        | client_id | SMALLINT | Foreign Key | Identifier linking the transaction to the user in the users_data table |
-
-        |  card_id  | SMALLINT | Foreign Key | Identifier linking the transaction to the respective card in the cards_data table |
-
-        |  amount  | FLOAT | Transaction amount in the respective currency |
-
-        | use_chip | NVARCHAR(50) | Boolean/Flag indicating if the chip was used during the transaction |
-
-        |  merchant_id  | INT | Unique identifier of the merchant |
-
-        | merchant_city | NVARCHAR(50) | City where the merchant is located |
-    
-        | merchant_state | NVARCHAR(50) | State where the merchant is located |
-
-        | zip | INT | ZIP code of the merchant's location |
-
-        | mcc | SMALLINT | Foreign Key | Merchant Category Code representing the type of merchant or transaction |
-
-        | errors | NVARCHAR(50) | Any errors encountered during the transaction (if any) |
+transaction_data: Transaction information
+| Column | Data Type | Description | Key |
+|--------|-----------|-------------|-----|
+| id | INT | Unique identifier for each transaction | Primary Key |
+|  date  | DATETIME2(7) | Date of the transaction |
+| client_id | SMALLINT | Identifier linking the transaction to the user in the users_data table | Foreign Key |
+|  card_id  | SMALLINT | Identifier linking the transaction to the respective card in the cards_data table | Foreign Key |
+|  amount  | FLOAT | Transaction amount in the respective currency |
+| use_chip | NVARCHAR(50) | Boolean/Flag indicating if the chip was used during the transaction |
+|  merchant_id  | INT | Unique identifier of the merchant |
+| merchant_city | NVARCHAR(50) | City where the merchant is located |
+| merchant_state | NVARCHAR(50) | State where the merchant is located |
+| zip | INT | ZIP code of the merchant's location |
+| mcc | SMALLINT | Merchant Category Code representing the type of merchant or transaction | Foreign Key |
+| errors | NVARCHAR(50) | Any errors encountered during the transaction (if any) |
 
 ### Tools: 
 - SQL
