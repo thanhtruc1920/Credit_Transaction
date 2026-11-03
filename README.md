@@ -18,7 +18,7 @@ user_data: Customer information
 | yearly_income | DECIMAL(20, 2) | Total yearly income of the user |
 |  total_debt  | DECIMAL(20, 2) | Total amount of debt owed by the user |
 | credit_score | SMALLINT | Credit score rating of the user |
-| num_credit_cards | TINYINT | Number of credit cards owned by the user |
+| num_credit_cards | TINYINT | Number of credit cards owned by the user |.
 
 transaction_data: Transaction information
 | Column | Data Type | Description | Key |
