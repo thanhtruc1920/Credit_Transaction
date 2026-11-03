@@ -3,9 +3,9 @@
 
 ### Datasets: 
 user_data: Customer information
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| id | SMALLINT | Unique identifier for each user |
+| Column | Data Type | Description | Key |
+|--------|-----------|-------------|-----|
+| id | SMALLINT | Unique identifier for each user | Primary Key |
 |  current_age  | TINYINT | Current age of the user |
 | retirement_age | TINYINT | Declared retirement age of the user |
 | birth_year  | SMALLINT | Year of birth for the user |
@@ -36,9 +36,11 @@ transaction_data: Transaction information
 | zip | INT | ZIP code of the merchant's location |
 | mcc | SMALLINT | Merchant Category Code representing the type of merchant or transaction | Foreign Key |
 | errors | NVARCHAR(50) | Any errors encountered during the transaction (if any) |
+<br>
 
 ### Tools: 
 - SQL
+<br>
 
 ### In the [data_processing.sql](https://github.com/user-attachments/files/25808274/data_processing.sql) file:
 
@@ -53,5 +55,3 @@ transaction_data: Transaction information
 🔹 Error Column:  
 - Replaced blank values with "No Error".
 - Split rows containing multiple errors into separate rows base on "id" column from the transaction_data table.
-
-
