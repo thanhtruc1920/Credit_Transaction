@@ -3,7 +3,7 @@
 
 ### Datasets: 
 user_data:
-
+        | Column | Data Type | Description |
         | id | SMALLINT | Unique identifier for each user |
         |  current_age  | TINYINT | Current age of the user |
         | retirement_age | TINYINT | Declared retirement age of the user |
